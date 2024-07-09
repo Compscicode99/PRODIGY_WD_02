@@ -1,0 +1,63 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(128,0,128,1) 0%, rgba(255,165,0,1) 100%);
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+.stopwatch {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.time {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: rgba(255, 165, 0, 0.7);
+    transform: scale(1.1);
+}
+
+.laps {
+    max-height: 200px;
+    overflow-y: auto;
+    border-top: 1px solid white;
+    padding-top: 10px;
+}
+
+.lap-item {
+    font-size: 1.2em;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
